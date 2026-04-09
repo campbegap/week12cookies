@@ -1,167 +1,228 @@
 <!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap Lab</title>
 
     <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <style>
-        body {
-            padding-top: 20px;
-        }
+      body {
+        padding-top: 20px;
+      }
 
-    .card img {
+      .card img {
         width: 100%;
         height: 200px;
         object-fit: cover;
-    }
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#"> 
-                <img src="brand.webp" style="width:50px; height:50px; border-radius:25px;">
-            </a>
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="brand.webp"
+            style="width: 50px; height: 50px; border-radius: 25px"
+          />
+        </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-                <span class="navbar-toggler-icon"></span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav mx-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex ms-auto">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+            />
+            <button type="button" class="btn btn-outline-success">
+              Search
             </button>
-
-            <div class="collapse navbar-collapse" id="navMenu">
-                <ul class="navbar-nav mx-3">
-                    <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-                <form class="d-flex ms-auto"></form>
-                    <input class="form-control me-2" type="search" placeholder="Search"/>
-                    <button class="btn btn-outline-success">Search</button>
-                </form>
-            </div>
+          </form>
         </div>
+      </div>
     </nav>
 
-<div class="container mt-4">
-    <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4 g-3">
-
+    <div class="container mt-4">
+      <div
+        class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4 g-3"
+      >
         <div class="col">
-            <div class="card my-1 h-100">
-                <div class="card-header">Pink Sugar</div>
-                    <img src="cookie1.jpg">
-                    <div class="card-body">
-                    <div class="card-title">Best Cookie</div>
-                    <div class="card-subtitle">Frosted Cookie</div>
-                    <p class="card-text">Soft, chewy sugar cookie with pink frosting and sprinkles</p>
-                    <a href="https://lifemadesweeter.com/soft-lofthouse-style-frosted-sugar-cookies/" class="card-link">Click for extra details!</a>
-                </div>
+          <div class="card my-1 h-100">
+            <div class="card-header">Pink Sugar</div>
+            <img src="cookie1.jpg" />
+            <div class="card-body">
+              <div class="card-title">Best Cookie</div>
+              <div class="card-subtitle">Frosted Cookie</div>
+              <p class="card-text">
+                Soft, chewy sugar cookie with pink frosting and sprinkles
+              </p>
+              <a
+                href="https://lifemadesweeter.com/soft-lofthouse-style-frosted-sugar-cookies/"
+                class="card-link"
+                >Click for extra details!</a
+              >
             </div>
+          </div>
         </div>
 
         <div class="col">
-            <div class="card my-1 h-100">
-                <div class="card-header">Chocolate Chip</div>
-                    <img src="cookie2.jpg">
-                    <div class="card-body">
-                    <div class="card-title">Classic</div>
-                    <div class="card-subtitle">Classic</div>
-                    <p class="card-text">Classic chocolate chip cookie that melt in your mouth! </p>
-                    <a href="https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/" class="card-link">Click for extra details!</a>
-                </div>
+          <div class="card my-1 h-100">
+            <div class="card-header">Chocolate Chip</div>
+            <img src="cookie2.jpg" />
+            <div class="card-body">
+              <div class="card-title">Classic</div>
+              <div class="card-subtitle">Classic</div>
+              <p class="card-text">
+                Classic chocolate chip cookie that melt in your mouth!
+              </p>
+              <a
+                href="https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/"
+                class="card-link"
+                >Click for extra details!</a
+              >
             </div>
+          </div>
         </div>
 
         <div class="col">
-            <div class="card my-1 h-100">
-                <div class="card-header">Kris Kringle</div>
-                    <img src="cookie3.jpg">
-                    <div class="card-body">
-                    <div class="card-title">Seasonal</div>
-                    <div class="card-subtitle">Holiday Cookie</div>
-                    <p class="card-text">Chocolate cookie topped with fudge and crushed peppermint pieces.</p>
-                    <a href="https://discover.hubpages.com/food/Double-Chocolate-Peppermint-Surprise-Cookies-Gluten-Free" class="card-link">Click for extra details!</a>
-                </div>
+          <div class="card my-1 h-100">
+            <div class="card-header">Kris Kringle</div>
+            <img src="cookie3.jpg" />
+            <div class="card-body">
+              <div class="card-title">Seasonal</div>
+              <div class="card-subtitle">Holiday Cookie</div>
+              <p class="card-text">
+                Chocolate cookie topped with fudge and crushed peppermint
+                pieces.
+              </p>
+              <a
+                href="https://discover.hubpages.com/food/Double-Chocolate-Peppermint-Surprise-Cookies-Gluten-Free"
+                class="card-link"
+                >Click for extra details!</a
+              >
             </div>
+          </div>
         </div>
 
         <div class="col">
-            <div class="card my-1 h-100">
-                <div class="card-header">Fruitcake</div>
-                    <img src="cookie4.jpg">
-                    <div class="card-body">
-                    <div class="card-title">Seasonal</div>
-                    <div class="card-subtitle">Holiday Cookie</div>
-                    <p class="card-text">A chewy cookie with fruitcake pieces.</p>
-                    <a href="https://www.pauladeen.com/recipe/fruitcake-drop-cookies/" class="card-link">Click for extra details!</a>
-                </div>
+          <div class="card my-1 h-100">
+            <div class="card-header">Fruitcake</div>
+            <img src="cookie4.jpg" />
+            <div class="card-body">
+              <div class="card-title">Seasonal</div>
+              <div class="card-subtitle">Holiday Cookie</div>
+              <p class="card-text">A chewy cookie with fruitcake pieces.</p>
+              <a
+                href="https://www.pauladeen.com/recipe/fruitcake-drop-cookies/"
+                class="card-link"
+                >Click for extra details!</a
+              >
             </div>
+          </div>
         </div>
 
         <div class="col">
-            <div class="card my-1 h-100">
-                <div class="card-header">Snickerdoodle</div>
-                    <img src="cookie5.jpg">
-                    <div class="card-body">
-                    <div class="card-title">Classic</div>
-                    <div class="card-subtitle">Classic</div>
-                    <p class="card-text">A soft, frosted cinnamon sugar cookie.</p>
-                    <a href="https://www.modernhoney.com/frosted-snickerdoodle-cookies/" class="card-link">Click for extra details!</a>
-                </div>
+          <div class="card my-1 h-100">
+            <div class="card-header">Snickerdoodle</div>
+            <img src="cookie5.jpg" />
+            <div class="card-body">
+              <div class="card-title">Classic</div>
+              <div class="card-subtitle">Classic</div>
+              <p class="card-text">A soft, frosted cinnamon sugar cookie.</p>
+              <a
+                href="https://www.modernhoney.com/frosted-snickerdoodle-cookies/"
+                class="card-link"
+                >Click for extra details!</a
+              >
             </div>
+          </div>
         </div>
 
         <div class="col">
-            <div class="card my-1 h-100">
-                <div class="card-header">Gingerbread</div>
-                    <img src="cookie6.jpg">
-                    <div class="card-body">
-                    <div class="card-title">Spiced Ginger</div>
-                    <div class="card-subtitle">Classic</div>
-                    <p class="card-text">A spiced cookie made with ginger and cinnamon.</p>
-                    <a href="https://www.foodnetwork.com/recipes/ina-garten/ultimate-ginger-cookie-recipe-1917558" class="card-link">Click for extra details!</a>
-                </div>
+          <div class="card my-1 h-100">
+            <div class="card-header">Gingerbread</div>
+            <img src="cookie6.jpg" />
+            <div class="card-body">
+              <div class="card-title">Spiced Ginger</div>
+              <div class="card-subtitle">Classic</div>
+              <p class="card-text">
+                A spiced cookie made with ginger and cinnamon.
+              </p>
+              <a
+                href="https://www.foodnetwork.com/recipes/ina-garten/ultimate-ginger-cookie-recipe-1917558"
+                class="card-link"
+                >Click for extra details!</a
+              >
             </div>
+          </div>
         </div>
 
         <div class="col">
-            <div class="card my-1 h-100">
-                <div class="card-header">Carrot</div>
-                    <img src="cookie7.jpg">
-                    <div class="card-body">
-                    <div class="card-title">Seasonal</div>
-                    <div class="card-subtitle">Holiday Cookie</div>
-                    <p class="card-text">A carrot cake inspired cookie with a cream cheese frosting.</p>
-                    <a href="https://www.thepioneerwoman.com/food-cooking/recipes/a39131603/carrot-cake-cookies-recipe/" class="card-link">Click for extra details!</a>
-                </div>
+          <div class="card my-1 h-100">
+            <div class="card-header">Carrot</div>
+            <img src="cookie7.jpg" />
+            <div class="card-body">
+              <div class="card-title">Seasonal</div>
+              <div class="card-subtitle">Holiday Cookie</div>
+              <p class="card-text">
+                A carrot cake inspired cookie with a cream cheese frosting.
+              </p>
+              <a
+                href="https://www.thepioneerwoman.com/food-cooking/recipes/a39131603/carrot-cake-cookies-recipe/"
+                class="card-link"
+                >Click for extra details!</a
+              >
             </div>
+          </div>
         </div>
 
         <div class="col">
-            <div class="card my-1 h-100">
-                <div class="card-header">Oatmeal Raisin</div>
-                    <img src="cookie8.jpg">
-                    <div class="card-body">
-                    <div class="card-title">Classic</div>
-                    <div class="card-subtitle">Classic</div>
-                    <p class="card-text">A soft, chewy oatmeal cookie with raisins. </p>
-                    <a href="https://sallysbakingaddiction.com/oatmeal-chocolate-chip-cookies/" class="card-link">Click for extra details!</a>
-                </div>
+          <div class="card my-1 h-100">
+            <div class="card-header">Oatmeal Raisin</div>
+            <img src="cookie8.jpg" />
+            <div class="card-body">
+              <div class="card-title">Classic</div>
+              <div class="card-subtitle">Classic</div>
+              <p class="card-text">
+                A soft, chewy oatmeal cookie with raisins.
+              </p>
+              <a
+                href="https://sallysbakingaddiction.com/oatmeal-chocolate-chip-cookies/"
+                class="card-link"
+                >Click for extra details!</a
+              >
             </div>
+          </div>
         </div>
-
+      </div>
     </div>
-</div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
-    </html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
